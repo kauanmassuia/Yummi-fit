@@ -67,7 +67,7 @@ export const About = () => {
                 <div className="relative z-10">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow">
-                      <span className="text-2xl text-primary-foreground">👑</span>
+                      <span className="text-2xl text-primary-foreground">✨</span>
                     </div>
                     <div>
                       <h3 className="text-sm font-semibold text-primary uppercase tracking-wider">Para qualquer pessoa</h3>

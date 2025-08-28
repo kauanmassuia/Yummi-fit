@@ -1,4 +1,4 @@
-import { Camera, Clock, Smartphone, TrendingUp, Users, Shield } from "lucide-react";
+import { Camera, Clock, Smartphone, TrendingUp, Users, Shield, Sparkles } from "lucide-react";
 import floatingIngredients from "@/media/ManCooking.svg";
 
 export const Features = () => {
@@ -28,9 +28,9 @@ export const Features = () => {
       color: "bg-primary-glow/10 text-primary"
     },
     {
-      icon: Users,
-      title: "Resultados que cabem na sua rotina",
-      description: "Receitas personalizadas para diferentes objetivos: emagrecimento, ganho de massa, performance e praticidade no dia a dia.",
+      icon: Sparkles,
+      title: "Zero Desperdício",
+      description: "Aproveite 100% dos ingredientes que você já tem, reduzindo desperdício e economizando dinheiro.",
       color: "bg-accent-warm/10 text-accent-warm"
     },
     {
