@@ -1,5 +1,5 @@
 import { Camera, Clock, Smartphone, TrendingUp, Users, Shield } from "lucide-react";
-import floatingIngredients from "@/assets/floating-ingredients.jpg";
+const floatingIngredients = "/placeholder.svg";
 
 export const Features = () => {
   const features = [

@@ -1,5 +1,5 @@
 import { Target, TrendingUp, Users2, Zap } from "lucide-react";
-import executiveLifestyle from "@/assets/executive-lifestyle.jpg";
+import executiveLifestyle from "@/media/YogaWoman.svg";
 
 export const About = () => {
   const values = [
