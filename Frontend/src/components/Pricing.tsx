@@ -13,8 +13,7 @@ export const Pricing = () => {
         "Receitas ilimitadas via WhatsApp",
         "Resposta em menos de 30 segundos", 
         "2000+ ingredientes reconhecidos",
-        "Suporte prioritário",
-        "Acesso à comunidade VIP"
+        "Suporte prioritário"
       ],
       isPopular: false,
       variant: "outline" as const,
@@ -28,15 +27,14 @@ export const Pricing = () => {
       originalPrice: "74,97",
       features: [
         "Tudo do plano mensal",
-        "~10% de economia",
+        "10% de economia",
         "Receitas personalizadas por objetivo",
         "Análise nutricional detalhada",
-        "Consultoria mensal gratuita",
         "Acesso antecipado a novas features"
       ],
       isPopular: true,
       variant: "premium" as const,
-      savings: "Economia de ~10%",
+      savings: "Economia de 10%",
       savingsColor: "text-primary-foreground"
     },
     {
@@ -47,16 +45,13 @@ export const Pricing = () => {
       originalPrice: "299,90",
       features: [
         "Tudo dos planos anteriores",
-        "~20% de economia",
+        "20% de economia",
         "IA personalizada com seu perfil",
-        "Mentoria nutricional trimestral",
-        "Relatórios de progresso mensais",
-        "Acesso vitalício a atualizações",
-        "Garantia de 30 dias"
+        
       ],
       isPopular: false,
       variant: "secondary" as const,
-      savings: "Economia de ~20%"
+      savings: "Economia de 20%"
     }
   ];
 

@@ -29,8 +29,8 @@ export const Features = () => {
     },
     {
       icon: Users,
-      title: "Comunidade YummiFit",
-      description: "Participe de uma comunidade diversa: praticantes de yoga, atletas, viajantes e iniciantes compartilhando resultados.",
+      title: "Resultados que cabem na sua rotina",
+      description: "Receitas personalizadas para diferentes objetivos: emagrecimento, ganho de massa, performance e praticidade no dia a dia.",
       color: "bg-accent-warm/10 text-accent-warm"
     },
     {

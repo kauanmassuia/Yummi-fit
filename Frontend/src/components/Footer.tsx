@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Instagram, Linkedin, Mail } from "lucide-react";
+import { MessageCircle, Instagram, Mail } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -83,13 +83,20 @@ export const Footer = () => {
             <a href="#" className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-colors">
               <MessageCircle className="w-5 h-5" />
             </a>
-            <a href="#" className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-colors">
+            <a
+              href="https://www.instagram.com/yummifit.ai/?utm_source=ig_web_button_share_sheet"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram da YummiFit"
+              className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-colors"
+            >
               <Instagram className="w-5 h-5" />
             </a>
-            <a href="#" className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-colors">
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a href="#" className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-colors">
+            <a
+              href="mailto:yummifit@corporativo.com.br"
+              className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-colors"
+              aria-label="Enviar email para yummifit@corporativo.com.br"
+            >
               <Mail className="w-5 h-5" />
             </a>
           </div>
