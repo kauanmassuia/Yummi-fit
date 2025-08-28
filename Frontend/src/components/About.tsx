@@ -23,9 +23,9 @@ export const About = () => {
     },
     {
       icon: Users2,
-      title: "Exclusividade",
-      subtitle: "Para quem busca excelência",
-      description: "Desenvolvido para executivos que não aceitam meio termo. Qualidade premium em cada interação."
+      title: "Para Todos",
+      subtitle: "Estilos de vida diferentes, mesmo objetivo",
+      description: "Yoga, corrida, viagens, família ou rotina intensa: a YummiFit se adapta ao seu jeito de viver."
     }
   ];
 
@@ -50,14 +50,14 @@ export const About = () => {
           </h2>
         </div>
 
-        {/* Executive Story Section - Premium Layout */}
+        {/* Story Section - Premium Layout */}
         <div className="relative mb-32">
           {/* Background Gradient Layers */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent-warm/10 rounded-3xl"></div>
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-background/80 via-transparent to-background/80 rounded-3xl"></div>
           
           <div className="relative z-10 grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-            {/* Left Content - Executive Story */}
+            {/* Left Content - Story */}
             <div className="lg:col-span-7 space-y-8">
               {/* Premium Header */}
               <div className="bg-gradient-to-br from-background/95 to-background/80 backdrop-blur-md border border-primary/20 rounded-3xl p-8 shadow-premium relative overflow-hidden">
@@ -70,8 +70,8 @@ export const About = () => {
                       <span className="text-2xl text-primary-foreground">👑</span>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold text-primary uppercase tracking-wider">Exclusivo para Executivos</h3>
-                      <p className="text-muted-foreground text-sm">O problema que só nós entendemos</p>
+                      <h3 className="text-sm font-semibold text-primary uppercase tracking-wider">Para qualquer pessoa</h3>
+                      <p className="text-muted-foreground text-sm">O problema de manter a dieta, a solução na palma da mão</p>
                     </div>
                   </div>
                   
@@ -139,12 +139,12 @@ export const About = () => {
 
             {/* Right Content - Visual & Stats */}
             <div className="lg:col-span-5 space-y-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              {/* Executive Image */}
+              {/* Hero Image */}
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-primary opacity-20 rounded-3xl blur-xl group-hover:opacity-30 transition-opacity duration-300"></div>
                 <img 
                   src={executiveLifestyle} 
-                  alt="Executive lifestyle with healthy eating" 
+                  alt="Pessoa cozinhando e comendo de forma saudável" 
                   className="relative z-10 w-full rounded-3xl shadow-premium group-hover:shadow-glow transition-shadow duration-300"
                 />
                 
@@ -154,7 +154,7 @@ export const About = () => {
                 </div>
               </div>
 
-              {/* Executive Stats */}
+              {/* Social Proof */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-background/95 backdrop-blur-sm border border-primary/20 rounded-2xl p-6 text-center shadow-premium">
                   <div className="text-3xl font-bold text-primary mb-2">3h</div>
@@ -166,7 +166,7 @@ export const About = () => {
                 </div>
               </div>
 
-              {/* Executive Testimonials */}
+              {/* Depoimentos */}
               <div className="space-y-4">
                 <div className="bg-gradient-to-br from-background/95 to-background/80 backdrop-blur-sm border border-border/50 rounded-2xl p-6 shadow-premium">
                   <div className="flex items-start gap-4">
@@ -218,8 +218,7 @@ export const About = () => {
                 </h3>
                 
                 <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-                  Desenvolvido especificamente para executivos que valorizam tempo, qualidade e resultados. 
-                  Sem comprometer o padrão de excelência que você espera.
+                  Desenvolvido para quem valoriza tempo, qualidade e resultados — sem abrir mão do prazer de comer.
                 </p>
               </div>
             </div>

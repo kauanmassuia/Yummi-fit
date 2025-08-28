@@ -12,7 +12,7 @@ export const Footer = () => {
             <span className="bg-gradient-primary bg-clip-text text-transparent"> sua alimentação</span>?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Junte-se a milhares de executivos que já descobriram o prazer de comer saudável sem complicação.
+            Junte-se a milhares de pessoas que já descobriram o prazer de comer saudável sem complicação.
           </p>
           <Button variant="hero" size="lg" className="text-xl px-12 py-6">
             <MessageCircle className="w-6 h-6 mr-2" />
@@ -33,8 +33,8 @@ export const Footer = () => {
               </div>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Tecnologia que transforma qualquer ingrediente em receitas fitness personalizadas. 
-              Para executivos que não abrem mão da qualidade.
+              Tecnologia que transforma qualquer ingrediente em receitas fitness personalizadas.
+              Para quem busca praticidade, sabor e constância.
             </p>
           </div>
 

@@ -8,6 +8,7 @@ export const Pricing = () => {
       price: "24,99",
       period: "/mês",
       description: "Perfeito para experimentar",
+      originalPrice: "29,99",
       features: [
         "Receitas ilimitadas via WhatsApp",
         "Resposta em menos de 30 segundos", 
@@ -21,13 +22,13 @@ export const Pricing = () => {
     },
     {
       name: "Trimestral",
-      price: "19,99",
-      period: "/mês",
-      originalPrice: "24,99",
-      description: "Mais escolhido por executivos",
+      price: "67,50",
+      period: "/trimestre",
+      description: "Mais valor por período",
+      originalPrice: "74,97",
       features: [
         "Tudo do plano mensal",
-        "20% de desconto",
+        "~10% de economia",
         "Receitas personalizadas por objetivo",
         "Análise nutricional detalhada",
         "Consultoria mensal gratuita",
@@ -35,17 +36,18 @@ export const Pricing = () => {
       ],
       isPopular: true,
       variant: "premium" as const,
-      savings: "Economize R$ 60 no primeiro ano"
+      savings: "Economia de ~10%",
+      savingsColor: "text-primary-foreground"
     },
     {
       name: "Anual", 
-      price: "16,99",
-      period: "/mês",
-      originalPrice: "24,99",
+      price: "239,90",
+      period: "/ano",
       description: "Máximo valor para resultados consistentes",
+      originalPrice: "299,90",
       features: [
         "Tudo dos planos anteriores",
-        "32% de desconto",
+        "~20% de economia",
         "IA personalizada com seu perfil",
         "Mentoria nutricional trimestral",
         "Relatórios de progresso mensais",
@@ -54,7 +56,7 @@ export const Pricing = () => {
       ],
       isPopular: false,
       variant: "secondary" as const,
-      savings: "Economie R$ 288 por ano"
+      savings: "Economia de ~20%"
     }
   ];
 
@@ -74,14 +76,14 @@ export const Pricing = () => {
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Escolha seu
-            <span className="bg-gradient-primary bg-clip-text text-transparent"> investimento</span>
+            <span className="bg-gradient-primary bg-clip-text text-transparent"> plano</span>
             <br />
-            em alta performance
+            para manter constância
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Desenvolvido para executivos que entendem que <strong>tempo é dinheiro</strong> e 
-            <strong> saúde é o maior patrimônio</strong>. Escolha o plano que se adapta ao seu ritmo.
+            Pensado para qualquer pessoa que quer <strong>facilitar a dieta</strong> e manter constância.
+            Escolha o plano que combina com seu ritmo e objetivos.
           </p>
         </div>
 
@@ -131,7 +133,7 @@ export const Pricing = () => {
                     </span>
                   </div>
                   {plan.savings && (
-                    <div className={`text-sm mt-2 font-semibold ${plan.isPopular ? 'text-accent-warm' : 'text-primary'}`}>
+                    <div className={`text-sm mt-2 font-semibold ${plan.isPopular ? (plan.savingsColor ?? 'text-accent-warm') : 'text-primary'}`}>
                       {plan.savings}
                     </div>
                   )}

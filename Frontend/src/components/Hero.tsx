@@ -22,7 +22,7 @@ export const Hero = () => {
                 ))}
               </div>
               <span className="text-sm text-muted-foreground">
-                Amado por <span className="font-semibold text-foreground">5.000+</span> executivos
+                Amado por <span className="font-semibold text-foreground">5.000+</span> pessoas
               </span>
             </div>
 
@@ -37,8 +37,9 @@ export const Hero = () => {
 
             {/* Subtitle */}
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              Para executivos que querem <strong>resultados reais</strong> sem abrir mão do prazer de comer bem. 
-              Uma simples foto no WhatsApp e você tem receitas fitness personalizadas em segundos.
+              Para quem quer <strong>resultados reais</strong> sem abrir mão do prazer de comer bem.
+              Tire uma foto dos ingredientes e receba receitas fitness personalizadas em segundos —
+              perfeito para quem pratica yoga, atletas, viajantes, famílias e qualquer pessoa.
             </p>
 
             {/* CTA Buttons */}

@@ -1,5 +1,5 @@
 import { Camera, Clock, Smartphone, TrendingUp, Users, Shield } from "lucide-react";
-const floatingIngredients = "/placeholder.svg";
+import floatingIngredients from "@/media/ManCooking.svg";
 
 export const Features = () => {
   const features = [
@@ -11,8 +11,8 @@ export const Features = () => {
     },
     {
       icon: Clock,
-      title: "Economia de Tempo Premium", 
-      description: "Para executivos que valorizam cada minuto. Sem pesquisas, sem planejamento. Apenas resultados imediatos.",
+      title: "Economia de Tempo", 
+      description: "Sem pesquisas, sem planejamento. Resultados imediatos para sua rotina: treino, trabalho, família e viagens.",
       color: "bg-accent-warm/10 text-accent-warm"
     },
     {
@@ -29,14 +29,14 @@ export const Features = () => {
     },
     {
       icon: Users,
-      title: "Comunidade Exclusiva",
-      description: "Acesso a grupo VIP com outros executivos fitness. Troque experiências e mantenha a motivação em alta.",
+      title: "Comunidade YummiFit",
+      description: "Participe de uma comunidade diversa: praticantes de yoga, atletas, viajantes e iniciantes compartilhando resultados.",
       color: "bg-accent-warm/10 text-accent-warm"
     },
     {
       icon: Shield,
       title: "Confiança & Qualidade",
-      description: "Receitas validadas por nutricionistas especialistas em alimentação executiva e alta performance.",
+      description: "Receitas pensadas com boas práticas nutricionais e foco em objetivos reais de gente de verdade.",
       color: "bg-primary/10 text-primary"
     }
   ];
@@ -54,14 +54,14 @@ export const Features = () => {
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">
             <div className="w-2 h-2 bg-primary rounded-full animate-glow"></div>
-            Por que executivos escolhem YummiFit?
+            Por que pessoas escolhem a YummiFit?
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Tecnologia que
             <span className="bg-gradient-primary bg-clip-text text-transparent"> entende</span>
             <br />
-            sua rotina executiva
+            sua rotina
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
