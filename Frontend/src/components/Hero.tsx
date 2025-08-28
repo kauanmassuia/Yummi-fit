@@ -38,8 +38,8 @@ export const Hero = () => {
             {/* Subtitle */}
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
               Para quem quer <strong>resultados reais</strong> sem abrir mão do prazer de comer bem.
-              Tire uma foto dos ingredientes e receba receitas fitness personalizadas em segundos —
-              perfeito para quem pratica yoga, atletas, viajantes, famílias e qualquer pessoa.
+              Tire uma foto dos ingredientes e receba receitas fitness criativas em segundos —
+              receitas que transformam sua alimentação e seus resultados.
             </p>
 
             {/* CTA Buttons */}
