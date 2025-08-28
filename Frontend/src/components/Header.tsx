@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import YummiFitLogo from "@/media/YummiFitLogo_HQ.svg";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,13 +11,12 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center shadow-glow">
-              <span className="text-primary-foreground font-bold text-xl">🥑</span>
-            </div>
-            <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              YummiFit
-            </div>
+          <div className="flex items-center">
+            <img 
+              src={YummiFitLogo} 
+              alt="YummiFit Logo" 
+              className="h-32 w-auto mix-blend-multiply"
+            />
           </div>
 
           {/* Desktop Navigation */}

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Instagram, Mail } from "lucide-react";
+import YummiFitLogo from "@/media/YummiFitLogo_HQ.svg";
 
 export const Footer = () => {
   return (
@@ -25,12 +26,11 @@ export const Footer = () => {
           {/* Company */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold">🥑</span>
-              </div>
-              <div className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                YummiFit
-              </div>
+              <img 
+                src={YummiFitLogo} 
+                alt="YummiFit Logo" 
+                className="h-32 w-auto mix-blend-multiply"
+              />
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Tecnologia que transforma qualquer ingrediente em receitas fitness personalizadas.
