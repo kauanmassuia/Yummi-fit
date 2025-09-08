@@ -8,6 +8,8 @@ const port = process.env.PORT || 3000;
 
 async function bootstrap() {
   await connectDB();
+  app.set('trust proxy', 1);
+
   const server = createServer(app);
   server.listen(port, () => logger.info({ port }, `HTTP server on ${port}`));
 }

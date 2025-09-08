@@ -1,2 +1,14 @@
 node_modules
+Backend/tokens/
+tokens/
+**/tokens/
+**/Default/Cache/
+**/Cache/Cache_Data/
+**/imagem_temp_*.jpg
+/audio_temp_.
+node_modules/
 .env
+.env.
+!.env.example
+logs/
+*.log
