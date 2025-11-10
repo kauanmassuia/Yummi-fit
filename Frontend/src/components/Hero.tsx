@@ -1,10 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import heroPhone from "@/media/FruitImage.svg";
+import Aurora from "@/components/ui/Aurora";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <div aria-hidden className="absolute inset-0 -z-10 pointer-events-none">
+        <Aurora 
+          colorStops={["#F4FADB", "#EAF6C8", "#D7F0A8", "#C6E58A"]}
+          blend={0.3}
+          amplitude={0.45}
+          speed={0.3}
+          opacity={0.55}
+        />
+        {/* Soft white gradient overlay to improve text contrast on the left side */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent" />
+      </div>
       {/* Floating 3D Elements */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float blur-sm"></div>
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-accent-warm/20 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>

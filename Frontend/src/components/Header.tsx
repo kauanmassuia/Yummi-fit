@@ -1,69 +1,50 @@
-import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
-import { useState } from "react";
-import YummiFitLogo from "@/media/YummiFitLogo_HQ.svg";
+import CardNav, { CardNavItem } from "@/components/ui/CardNav";
+import YummiFitLogo from "@/media/LogoYummiFit.svg";
 
 export const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const items: CardNavItem[] = [
+    {
+      label: "Sobre",
+      bgColor: "linear-gradient(135deg, #7DA32E 0%, #46B47D 100%)",
+      textColor: "#fff",
+      links: [
+        { label: "Nossa História", href: "#sobre", ariaLabel: "Ir para Nossa História" },
+        { label: "Como Funciona", href: "#como-funciona", ariaLabel: "Ir para Como Funciona" }
+      ]
+    },
+    {
+      label: "Recursos",
+      bgColor: "linear-gradient(135deg, #46B47D 0%, #98B63B 100%)",
+      textColor: "#fff",
+      links: [
+        { label: "Perguntas Frequentes", href: "#faq", ariaLabel: "Ver perguntas frequentes" },
+        { label: "Planos", href: "#precos", ariaLabel: "Ver planos e preços" }
+      ]
+    },
+    {
+      label: "Contato",
+      bgColor: "linear-gradient(135deg, #98B63B 0%, #CAE266 100%)",
+      textColor: "#fff",
+      links: [
+        { label: "WhatsApp", href: "#precos", ariaLabel: "Falar no WhatsApp" },
+        { label: "Email", href: "mailto:contato@yummifit.com", ariaLabel: "Enviar email" },
+        { label: "LinkedIn", href: "https://www.linkedin.com", ariaLabel: "Abrir LinkedIn" }
+      ]
+    }
+  ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <div className="flex items-center">
-            <img 
-              src={YummiFitLogo} 
-              alt="YummiFit Logo" 
-              className="h-32 w-auto mix-blend-multiply"
-            />
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="#como-funciona" className="text-foreground hover:text-primary transition-colors font-medium">
-              Como Funciona
-            </a>
-            <a href="#sobre" className="text-foreground hover:text-primary transition-colors font-medium">
-              Nossa História
-            </a>
-            <a href="#precos" className="text-foreground hover:text-primary transition-colors font-medium">
-              Preços
-            </a>
-            <Button variant="premium" size="lg">
-              Começar Agora
-            </Button>
-          </nav>
-
-          {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
-
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border/50 p-4 animate-fade-in">
-            <nav className="flex flex-col gap-4">
-              <a href="#como-funciona" className="text-foreground hover:text-primary transition-colors font-medium py-2">
-                Como Funciona
-              </a>
-              <a href="#sobre" className="text-foreground hover:text-primary transition-colors font-medium py-2">
-                Nossa História  
-              </a>
-              <a href="#precos" className="text-foreground hover:text-primary transition-colors font-medium py-2">
-                Preços
-              </a>
-              <Button variant="premium" size="lg" className="mt-4">
-                Começar Agora
-              </Button>
-            </nav>
-          </div>
-        )}
-      </div>
+    <header className="fixed top-0 left-0 right-0 z-50">
+      <CardNav
+        logo={YummiFitLogo}
+        logoAlt="YummiFit Logo"
+        items={items}
+        baseColor="#ffffff"
+        menuColor="#111111"
+        buttonBgColor="#111111"
+        buttonTextColor="#ffffff"
+        ease="power3.out"
+      />
     </header>
   );
 };

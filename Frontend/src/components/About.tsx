@@ -1,5 +1,6 @@
 import { Target, TrendingUp, Users2, Zap } from "lucide-react";
 import executiveLifestyle from "@/media/YogaWoman.svg";
+// Aurora background removed from this section per request
 
 export const About = () => {
   const values = [
@@ -30,7 +31,7 @@ export const About = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-accent-warm/5 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-20 left-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent-warm/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>

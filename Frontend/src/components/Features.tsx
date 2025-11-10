@@ -1,5 +1,6 @@
 import { Camera, Clock, Smartphone, TrendingUp, Users, Shield, Sparkles } from "lucide-react";
 import floatingIngredients from "@/media/ManCooking.svg";
+// Aurora background removed from this section per request
 
 export const Features = () => {
   const features = [
@@ -42,7 +43,7 @@ export const Features = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-primary/5 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float"></div>
